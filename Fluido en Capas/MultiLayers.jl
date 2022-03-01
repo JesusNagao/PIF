@@ -1,7 +1,7 @@
 using Plots;
 include("MultiLayerOperation.jl")
 
-n = 5 #Number of Layers
+n = 10 #Number of Layers
 
 x = Array{Float64}([i for i in range(0.0, stop=1000.0, step=10)]);
 y = Array{Float64}(undef, length(x));
@@ -15,8 +15,8 @@ u[length(x)] = 0;
 const dx = 10.0;
 const g = 9.8;
 const h0 = 10.0;
-const dt = 0.01;
-it = 500;
+dt = 0.01;
+it = 2000;
 
 gaussian(x, y, h, 500.0, 750.0)
 init_Layers(layer, y, u, h)
