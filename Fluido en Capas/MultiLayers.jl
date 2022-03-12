@@ -15,9 +15,10 @@ u[length(x)] = 0;
 const dx = 10.0;
 const g = 9.8;
 const h0 = 10.0;
-dt = 0.01;
-it = 2000;
+dt = 0.03;
+it = 500;
 
-gaussian(x, y, h, 500.0, 750.0)
+gaussian(x, y, h, 500.0, 750.0, n)
 init_Layers(layer, y, u, h)
-@time animate(x, layer, it, g, dx, dt, 0.05, h0, n)
+@time animate_playa2(x, layer, it, g, dx, dt, 0.05, h0, n)
+
